@@ -8,15 +8,15 @@ import {LayoutModule} from '@angular/cdk/layout';
 import {MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule} from '@angular/material';
 import {RouterModule, Routes} from "@angular/router";
 import {HomeComponent} from './home/home.component';
-import { LoginComponent } from './log-reg/login/login.component';
-import { LogRegComponent } from './log-reg/log-reg.component';
-import { RegisterComponent } from './log-reg/register/register.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { AuthComponent } from './auth/auth.component';
 
 const appRoutes: Routes =
     [
         {path: '', redirectTo: "/home", pathMatch: 'full'},
         {path: 'home', component: HomeComponent},
-        {path: 'logReg', component: LogRegComponent}
+        {path: 'auth', component: AuthComponent}
     ]
 
 @NgModule({
@@ -25,8 +25,8 @@ const appRoutes: Routes =
         NavbarComponent,
         HomeComponent,
         LoginComponent,
-        LogRegComponent,
-        RegisterComponent
+        RegisterComponent,
+        AuthComponent
     ],
     imports: [
         BrowserModule,
