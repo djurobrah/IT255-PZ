@@ -8,8 +8,9 @@ import {LayoutModule} from '@angular/cdk/layout';
 import {MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule} from '@angular/material';
 import {RouterModule, Routes} from "@angular/router";
 import {HomeComponent} from './home/home.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './log-reg/login/login.component';
 import { LogRegComponent } from './log-reg/log-reg.component';
+import { RegisterComponent } from './log-reg/register/register.component';
 
 const appRoutes: Routes =
     [
@@ -24,7 +25,8 @@ const appRoutes: Routes =
         NavbarComponent,
         HomeComponent,
         LoginComponent,
-        LogRegComponent
+        LogRegComponent,
+        RegisterComponent
     ],
     imports: [
         BrowserModule,
