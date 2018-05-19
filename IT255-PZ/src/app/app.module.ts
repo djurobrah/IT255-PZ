@@ -6,17 +6,24 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NavbarComponent} from './navbar/navbar.component';
 import {LayoutModule} from '@angular/cdk/layout';
 import {MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule} from '@angular/material';
+import {MatCardModule} from '@angular/material/card';
 import {RouterModule, Routes} from "@angular/router";
 import {HomeComponent} from './home/home.component';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { AuthComponent } from './auth/auth.component';
+import {LoginComponent} from './auth/login/login.component';
+import {RegisterComponent} from './auth/register/register.component';
+import {AuthComponent} from './auth/auth.component';
+import {AngularFireModule} from "angularfire2";
+import {AngularFirestoreModule} from 'angularfire2/firestore';
+import {AngularFireAuthModule} from 'angularfire2/auth';
+import {environment} from "../environments/environment";
+import {TeamComponent} from './team/team.component';
 
 const appRoutes: Routes =
     [
         {path: '', redirectTo: "/home", pathMatch: 'full'},
         {path: 'home', component: HomeComponent},
-        {path: 'auth', component: AuthComponent}
+        {path: 'auth', component: AuthComponent},
+        {path: 'team', component: TeamComponent}
     ]
 
 @NgModule({
@@ -26,7 +33,8 @@ const appRoutes: Routes =
         HomeComponent,
         LoginComponent,
         RegisterComponent,
-        AuthComponent
+        AuthComponent,
+        TeamComponent
     ],
     imports: [
         BrowserModule,
@@ -37,6 +45,10 @@ const appRoutes: Routes =
         MatSidenavModule,
         MatIconModule,
         MatListModule,
+        MatCardModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFirestoreModule,
+        AngularFireAuthModule,
         RouterModule.forRoot(appRoutes)
     ],
     providers: [],
