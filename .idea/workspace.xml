@@ -3,20 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5e11d995-3cd6-4c2f-86cd-3515e31e776b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/log-reg.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/log-reg.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/log-reg.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/log-reg.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT255-PZ/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT255-PZ/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="184">
+              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -39,20 +29,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.ts">
+      <file leaf-file-name="environment.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IT255-PZ/src/environments/environment.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <caret line="4" selection-start-line="4" selection-end-line="14" selection-end-column="2" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html">
+      <file leaf-file-name="environment.prod.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IT255-PZ/src/environments/environment.prod.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+            <state relative-caret-position="23">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -82,6 +75,8 @@
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.html" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/IT255-PZ/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/IT255-PZ/src/environments/environment.prod.ts" />
       </list>
     </option>
   </component>
@@ -106,7 +101,7 @@
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
-    <option name="height" value="969" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -152,8 +147,7 @@
               <item name="IT255-PZ" type="462c0819:PsiDirectoryNode" />
               <item name="IT255-PZ" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -199,38 +193,39 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526648341808</updated>
-      <workItem from="1526648343046" duration="6795000" />
+      <workItem from="1526648343046" duration="8691000" />
+      <workItem from="1526735611413" duration="3355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6795000" />
+    <option name="totallyTimeSpent" value="12046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32957748" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info id="npm" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32957748" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32957748" />
+      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.32957748" />
+      <window_info anchor="bottom" id="TypeScript" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info id="npm" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +235,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/angular.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-575">
@@ -261,27 +273,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/log-reg/log-reg.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="29" lean-forward="true" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/log-reg/log-reg.component.html" />
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -296,13 +288,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="184">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
