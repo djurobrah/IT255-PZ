@@ -16,6 +16,7 @@
     "@angular/common": "^6.0.0",
     "@angular/compiler": "^6.0.0",
     "@angular/core": "^6.0.0",
+    "@angular/flex-layout": "^5.0.0-beta.14",
     "@angular/forms": "^6.0.0",
     "@angular/http": "^6.0.0",
     "@angular/material": "^6.0.0",
@@ -25,7 +26,8 @@
     "angularfire2": "^5.0.0-rc.9",
     "core-js": "^2.5.4",
     "firebase": "^5.0.3",
-    "rxjs": "^6.0.0",
+    "rxjs": "6.0.0-beta.1",
+    "rxjs-compat": "6.0.0-beta.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

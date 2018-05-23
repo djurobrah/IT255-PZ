@@ -1,5 +1,11 @@
+.card-container
+{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
 .example-card {
-    max-width: 300px;
+    flex-basis: 25%;
 }
 
 .example-header-image {

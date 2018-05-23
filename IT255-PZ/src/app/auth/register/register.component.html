@@ -1,3 +1,21 @@
-<p>
-  register works!
-</p>
+<div class="flexColumn">
+    <form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+        <h1 class="mat-title">Register a new account</h1>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter your email address</mat-label>
+            <input matInput placeholder="email" formControlName="email">
+            <mat-error *ngIf="registerForm.get('email').invalid">{{getEmailErrorMsg()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter your password</mat-label>
+            <input matInput placeholder="Password" formControlName="password">
+            <mat-error *ngIf="registerForm.get('password').invalid">{{getPasswordErrorMsg()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Confirm your password</mat-label>
+            <input matInput placeholder="Password" formControlName="passwordConf">
+            <mat-error *ngIf="registerForm.get('passwordConf').invalid">{{getPasswordConfErrorMsg()}}</mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" [disabled]="registerForm.invalid">Log in</button>
+    </form>
+</div>
