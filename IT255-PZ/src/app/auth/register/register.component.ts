@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {AuthService} from "../auth.service";
 
 @Component({
     selector: 'app-register',
@@ -7,6 +8,10 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
     styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+
+    constructor(private authService: AuthService) {
+
+    }
 
     registerForm: FormGroup;
 
@@ -19,7 +24,11 @@ export class RegisterComponent implements OnInit {
     }
 
     onSubmit() {
-        //console.log(this.registerForm);
+        const email = this.registerForm.value.email;
+        const password = this.registerForm.value.password;
+        const passwordConf = this.registerForm.value.passwordConf;
+        this.authService.registerUser(email, password);
+        console.log(password);
     }
 
     getEmailErrorMsg() {
@@ -47,10 +56,8 @@ export class RegisterComponent implements OnInit {
     }
 
     // CUSTOM VALIDATOR
-    passMismatch(control: FormControl): {[s: string]: boolean}
-    {
-        if(control.value !== control.root.value.password)
-        {
+    passMismatch(control: FormControl): { [s: string]: boolean } {
+        if (control.value !== control.root.value.password) {
             return {'passDontMatch': true};
         }
         return null;

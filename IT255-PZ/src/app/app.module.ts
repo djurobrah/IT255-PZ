@@ -28,13 +28,14 @@ import {environment} from "../environments/environment";
 import {TeamComponent} from './team/team.component';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {ReactiveFormsModule} from "@angular/forms";
+import {AuthService} from "./auth/auth.service";
 
 const appRoutes: Routes =
     [
         {path: '', redirectTo: "/home", pathMatch: 'full'},
         {path: 'home', component: HomeComponent},
         {path: 'auth', component: AuthComponent},
-        {path: 'team', component: RegisterComponent}
+        {path: 'team', component: TeamComponent}
     ]
 
 @NgModule({
@@ -67,7 +68,7 @@ const appRoutes: Routes =
         AngularFireAuthModule,
         RouterModule.forRoot(appRoutes)
     ],
-    providers: [],
+    providers: [AuthService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
