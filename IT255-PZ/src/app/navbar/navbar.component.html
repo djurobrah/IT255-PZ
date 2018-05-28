@@ -8,9 +8,18 @@
             [opened]="!(isHandset | async)!.matches">
         <mat-toolbar color="primary">Menu</mat-toolbar>
         <mat-nav-list>
-            <a mat-list-item routerLink="/home">Home</a>
-            <a mat-list-item routerLink="/auth">Auth</a>
-            <a mat-list-item routerLink="/team">Our team</a>
+            <a mat-list-item routerLink="/home">
+                <mat-icon>home</mat-icon>
+                Home
+            </a>
+            <a mat-list-item routerLink="/team">
+                <mat-icon>people</mat-icon>
+                Our team
+            </a>
+            <a mat-list-item routerLink="/admin">
+                <mat-icon>recent_actors</mat-icon>
+                Admin panel
+            </a>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
@@ -24,6 +33,19 @@
                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
             <span>Application Title</span>
+            <span class="flexSpacer"></span>
+            <ng-template [ngIf]="this.authService.isAuthenticated()">
+                <mat-icon>person</mat-icon>
+                <span>{{this.authService.getDisplayName()}}</span>
+                <button (click)="this.authService.logoutUser();" mat-button>Logout
+                    <mat-icon>exit_to_app</mat-icon>
+                </button>
+            </ng-template>
+            <ng-template [ngIf]="!this.authService.isAuthenticated()">
+                <button routerLink="/auth" mat-button>Log in
+                    <mat-icon>exit_to_app</mat-icon>
+                </button>
+            </ng-template>
         </mat-toolbar>
         <div class="Aligner">
             <router-outlet></router-outlet>

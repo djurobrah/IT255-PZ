@@ -18,6 +18,7 @@ export class RegisterComponent implements OnInit {
     ngOnInit() {
         this.registerForm = new FormGroup({
             'email': new FormControl('', [Validators.required, Validators.email]),
+            'username': new FormControl('', [Validators.required, Validators.minLength(3)]),
             'password': new FormControl('', [Validators.required, Validators.minLength(6)]),
             'passwordConf': new FormControl('', [Validators.required, this.passMismatch.bind(this)])
         });
@@ -26,9 +27,8 @@ export class RegisterComponent implements OnInit {
     onSubmit() {
         const email = this.registerForm.value.email;
         const password = this.registerForm.value.password;
-        const passwordConf = this.registerForm.value.passwordConf;
-        this.authService.registerUser(email, password);
-        console.log(password);
+        const username = this.registerForm.value.username;
+        this.authService.tryRegister(email, username, password);
     }
 
     getEmailErrorMsg() {
@@ -38,6 +38,18 @@ export class RegisterComponent implements OnInit {
         else {
             if (this.registerForm.get('email').hasError('email')) {
                 return 'Not a valid email!'
+            }
+            return '';
+        }
+    }
+
+    getUsernameErrorMsg() {
+        if (this.registerForm.get('username').hasError('required')) {
+            return 'You must enter a value!'
+        }
+        else {
+            if (this.registerForm.get('email').hasError('minlength')) {
+                return 'Minimum 6 characters!'
             }
             return '';
         }
