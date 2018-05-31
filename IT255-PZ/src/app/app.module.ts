@@ -38,7 +38,7 @@ const appRoutes: Routes =
     [
         {path: '', redirectTo: "/home", pathMatch: 'full'},
         {path: 'home', component: HomeComponent},
-        {path: 'auth', component: AuthComponent, },
+        {path: 'auth', component: AuthComponent, canActivate: [AuthGuardService]},
         {path: 'team', component: TeamComponent, canActivate: [AuthGuardService]},
         {path: 'admin', component: AdminComponent, canActivate: [AuthGuardService]}
 

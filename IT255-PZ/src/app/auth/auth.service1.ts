@@ -2,94 +2,62 @@ import {Injectable} from '@angular/core';
 import {AngularFireAuth} from 'angularfire2/auth';
 import {MatSnackBar} from "@angular/material";
 import {Router} from "@angular/router";
-import {User} from "firebase";
-import {Observable} from "rxjs/Observable";
 
 @Injectable()
-export class AuthService
-{
+export class AuthService {
     router: Router;
-    authenticated: boolean;
-
+    bla: string;
     constructor(public afAuth: AngularFireAuth, public snackBar: MatSnackBar, router: Router)
     {
-        console.log("palac");
-        this.afAuth.authState.subscribe(auth =>
-        {
-            if (auth)
-            {
-                console.log('You are authenticated');
-                this.authenticated = true;
-            }
-            else
-            {
-                console.log('You are not authenticated');
-                this.authenticated = false;
-            }
-
-        });
         this.router = router;
     }
 
-    openSnackBar(message: string, action: string)
-    {
+    openSnackBar(message: string, action: string) {
         this.snackBar.open(message, action, {
             duration: 2000,
         });
     }
 
-    tryRegister(email: string, username: string, password: string)
-    {
+    tryRegister(email: string, username: string, password: string) {
         this.registerUser(email, username, password)
-            .then(res =>
-            {
+            .then(res => {
                 this.updateUsername(username);
                 this.logoutUser();
                 this.openSnackBar("Successfully created an account!", "");
-            }, err =>
-            {
+            }, err => {
                 this.openSnackBar(err, "CLOSE");
             })
     }
 
-    registerUser(email: string, username: string, password: string)
-    {
-        return new Promise<any>((resolve, reject) =>
-        {
+    registerUser(email: string, username: string, password: string) {
+        return new Promise<any>((resolve, reject) => {
             this.afAuth.auth.createUserWithEmailAndPassword(email, password)
-                .then(res =>
-                {
+                .then(res => {
                     resolve(res);
                 }, err => reject(err))
         })
     }
 
-    tryLogin(email: string, password: string)
-    {
+    tryLogin(email: string, password: string) {
         this.loginUser(email, password)
-            .then(res =>
-            {
+            .then(res => {
                 this.router.navigate(["/home"]);
-            }, err =>
-            {
+                this.bla = "blAAAA";
+            }, err => {
                 this.openSnackBar(err, "CLOSE");
             })
     }
 
-    loginUser(email: string, password: string)
-    {
-        return new Promise<any>((resolve, reject) =>
-        {
+    loginUser(email: string,password: string) {
+        return new Promise<any>((resolve, reject) => {
             this.afAuth.auth.signInWithEmailAndPassword(email, password)
-                .then(res =>
-                {
+                .then(res => {
                     resolve(res);
                 }, err => reject(err))
         })
     }
 
-    updateUsername(username: string)
-    {
+    updateUsername(username: string) {
         this.afAuth.auth.currentUser.updateProfile({
             displayName: username,
             photoURL: null
@@ -100,23 +68,15 @@ export class AuthService
             )
     }
 
-    getDisplayName()
-    {
+    getDisplayName() {
         return this.afAuth.auth.currentUser.displayName;
     }
 
-    isAuthenticated()
-    {
-        return this.authenticated;
+    isAuthenticated() {
+        return this.afAuth.auth.currentUser != null;
     }
 
-
-    logoutUser()
-    {
-        this.afAuth.auth.signOut().then(() =>
-        {
-            this.router.navigate(['']);
-        });
+    logoutUser() {
+        this.afAuth.auth.signOut();
     }
-
 }

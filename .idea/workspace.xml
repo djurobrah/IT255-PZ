@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e11d995-3cd6-4c2f-86cd-3515e31e776b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth-guard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth-guard.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +21,8 @@
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-713">
-              <caret line="41" column="75" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
+            <state relative-caret-position="138">
+              <caret line="40" column="80" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -34,8 +30,8 @@
       <file leaf-file-name="auth.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+            <state relative-caret-position="460">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -43,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth-guard.service.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="auth-guard.service.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth-guard.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="-8">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -55,37 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="auth.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/admin/admin.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="111">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -113,6 +83,8 @@
       <find>log</find>
       <find>register</find>
       <find>snackBar</find>
+      <find>display</find>
+      <find>bla</find>
     </findStrings>
     <replaceStrings>
       <replace>registerForm`</replace>
@@ -127,7 +99,6 @@
       <list>
         <option value="$PROJECT_DIR$/IT255-PZ/angular.json" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/index.html" />
-        <option value="$PROJECT_DIR$/IT255-PZ/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/log-reg/log-reg.component.html" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/environments/environment.ts" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/environments/environment.prod.ts" />
@@ -144,15 +115,17 @@
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service.spec.ts" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.css" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.html" />
-        <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.ts" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.ts" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service.ts" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth-guard.service.ts" />
-        <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth-guard.service.ts" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html" />
-        <option value="$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.ts" />
+        <option value="$PROJECT_DIR$/IT255-PZ/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service1.ts" />
         <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.ts" />
+        <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service.ts" />
+        <option value="$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/IT255-PZ/src/app/auth/auth-guard.service.ts" />
       </list>
     </option>
   </component>
@@ -231,6 +204,15 @@
               <item name="IT255-PZ" type="462c0819:PsiDirectoryNode" />
               <item name="IT255-PZ" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IT255-PZ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IT255-PZ" type="462c0819:PsiDirectoryNode" />
+              <item name="IT255-PZ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -241,6 +223,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&quot;&#9;FILE&#9;file://C:/Users/Djurica Djuricic/Documents/GitHub/IT255-PZ/IT255-PZ/src/app/app.component.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/app-1.1.1/resources/app/git/cmd/git.exe" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -251,6 +234,9 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/IT255-PZ/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Djurica Djuricic\Documents\GitHub\IT255-PZ\IT255-PZ\src\app\auth" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Djurica Djuricic\Documents\GitHub\IT255-PZ\IT255-PZ\src\app\auth" />
       <recent name="C:\Users\Djurica Djuricic\Documents\GitHub\IT255-PZ\IT255-PZ\src\app\log-reg" />
@@ -285,12 +271,13 @@
       <workItem from="1527182317125" duration="91000" />
       <workItem from="1527182729682" duration="19000" />
       <workItem from="1527182763464" duration="6088000" />
-      <workItem from="1527270908188" duration="30266000" />
+      <workItem from="1527270908188" duration="37933000" />
+      <workItem from="1527764252174" duration="22530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93287000" />
+    <option name="totallyTimeSpent" value="123484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -298,16 +285,14 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="4" side_tool="true" weight="0.3294271" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32957748" />
-      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.32957748" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.32957748" />
       <window_info anchor="bottom" id="TypeScript" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32957748" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
@@ -316,8 +301,10 @@
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="4" side_tool="true" weight="0.3294271" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32957748" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,37 +314,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -479,13 +435,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/log-reg/log-reg.component.html" />
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/environments/environment.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -535,29 +484,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="26" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service.spec.ts" />
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/team/team.component.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -587,34 +516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/node_modules/@firebase/auth-types/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="262" column="2" selection-start-line="262" selection-start-column="2" selection-end-line="262" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="15" column="98" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1062">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -625,23 +530,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/node_modules/@angular/router/src/router_state.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/admin/admin.component.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service.ts">
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/node_modules/@firebase/auth-types/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        <state relative-caret-position="144">
+          <caret line="306" column="2" selection-start-line="306" selection-start-column="2" selection-end-line="306" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/register/register.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service1.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1146">
+          <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth-guard.service.ts">
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -650,34 +640,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-713">
-          <caret line="41" column="75" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
+        <state relative-caret-position="138">
+          <caret line="40" column="80" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/navbar/navbar.component.html">
+    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth-guard.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="-8">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT255-PZ/src/app/auth/auth.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,20 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import {AuthGuardService} from "./auth-guard.service";
-import {Router} from "@angular/router";
+import {Component, OnInit} from '@angular/core';
+import {AuthService} from "./auth.service";
 
 @Component({
-  selector: 'app-auth',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.css']
+    selector: 'app-auth',
+    templateUrl: './auth.component.html',
+    styleUrls: ['./auth.component.css']
 })
-export class AuthComponent implements OnInit {
+export class AuthComponent implements OnInit
+{
+    constructor(private authService: AuthService)
+    {
+    }
 
-  constructor(private authGuardService: AuthGuardService, router: Router)
-  {
-      
-  }
-
-  ngOnInit() {
-  }
+    ngOnInit()
+    {
+    }
 
 }
