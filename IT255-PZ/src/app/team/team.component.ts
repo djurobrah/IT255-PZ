@@ -1,29 +1,25 @@
 import {Component, OnInit} from '@angular/core';
-import {AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from "angularfire2/firestore";
 import {Observable} from "rxjs/internal/Observable";
-
-interface TeamMember
-{
-    name: string;
-    bio: string;
-}
+import {FirestoreService} from "../firestore.service";
+import {TeamMember} from "../team-member";
 
 @Component({
     selector: 'app-team',
     templateUrl: './team.component.html',
     styleUrls: ['./team.component.css']
 })
-export class TeamComponent implements OnInit {
+export class TeamComponent implements OnInit
+{
 
-    memberCollection: AngularFirestoreCollection<TeamMember>;
     members: Observable<TeamMember[]>;
 
-    constructor(private afs: AngularFirestore) {
+    constructor(private firestore: FirestoreService)
+    {
     }
 
-    ngOnInit() {
-        this.memberCollection = this.afs.collection('team');
-        this.members = this.memberCollection.valueChanges();
+    ngOnInit()
+    {
+        this.members = this.firestore.getAllTeamMembers();
     }
 
 }

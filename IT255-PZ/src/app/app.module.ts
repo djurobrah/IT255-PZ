@@ -15,7 +15,10 @@ import {
 } from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {RouterModule, Routes} from "@angular/router";
@@ -32,7 +35,12 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AuthService} from "./auth/auth.service";
 import {AuthGuardService} from "./auth/auth-guard.service";
-import { AdminComponent } from './admin/admin.component';
+import {AdminComponent} from './admin/admin.component';
+import {FirestoreService} from "./firestore.service";
+import {AngularFireStorageModule} from "angularfire2/storage";
+import {FirestorageService} from "./firestorage.service";
+import {DefaultPipe} from './default.pipe';
+import {SettingsComponent} from './settings/settings.component';
 
 const appRoutes: Routes =
     [
@@ -40,7 +48,8 @@ const appRoutes: Routes =
         {path: 'home', component: HomeComponent},
         {path: 'auth', component: AuthComponent, canActivate: [AuthGuardService]},
         {path: 'team', component: TeamComponent, canActivate: [AuthGuardService]},
-        {path: 'admin', component: AdminComponent, canActivate: [AuthGuardService]}
+        {path: 'admin', component: AdminComponent, canActivate: [AuthGuardService]},
+        {path: 'settings', component: SettingsComponent, canActivate: [AuthGuardService]}
 
     ]
 
@@ -53,7 +62,9 @@ const appRoutes: Routes =
         RegisterComponent,
         AuthComponent,
         TeamComponent,
-        AdminComponent
+        AdminComponent,
+        DefaultPipe,
+        SettingsComponent
     ],
     imports: [
         BrowserModule,
@@ -62,23 +73,28 @@ const appRoutes: Routes =
         ReactiveFormsModule,
         MatToolbarModule,
         MatButtonModule,
+        MatProgressBarModule,
         MatSidenavModule,
         MatIconModule,
         MatMenuModule,
         MatListModule,
         MatCardModule,
         MatTabsModule,
+        MatGridListModule,
         MatFormFieldModule,
         MatInputModule,
+        MatExpansionModule,
         MatSnackBarModule,
         FlexLayoutModule,
         AngularFireModule.initializeApp(environment.firebase),
         AngularFirestoreModule,
         AngularFireAuthModule,
+        AngularFireStorageModule,
         RouterModule.forRoot(appRoutes)
     ],
-    providers: [AuthService, AuthGuardService],
+    providers: [AuthService, AuthGuardService, FirestoreService, FirestorageService],
     bootstrap: [AppComponent]
 })
-export class AppModule {
+export class AppModule
+{
 }

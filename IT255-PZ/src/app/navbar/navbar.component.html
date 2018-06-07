@@ -12,14 +12,20 @@
                 <mat-icon>home</mat-icon>
                 Home
             </a>
-            <a mat-list-item routerLink="/team">
-                <mat-icon>people</mat-icon>
-                Our team
-            </a>
-            <a mat-list-item routerLink="/admin">
-                <mat-icon>recent_actors</mat-icon>
-                Admin panel
-            </a>
+            <ng-template [ngIf]="this.authService.isAuthenticated()">
+                <a mat-list-item routerLink="/team">
+                    <mat-icon>people</mat-icon>
+                    Our team
+                </a>
+                <a mat-list-item routerLink="/admin">
+                    <mat-icon>recent_actors</mat-icon>
+                    Admin panel
+                </a>
+                <a mat-list-item routerLink="/settings">
+                    <mat-icon>settings</mat-icon>
+                    Account settings
+                </a>
+            </ng-template>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
@@ -51,5 +57,5 @@
             <router-outlet></router-outlet>
         </div>
 
-    </mat-sidenav-content>
+        </mat-sidenav-content>
 </mat-sidenav-container>

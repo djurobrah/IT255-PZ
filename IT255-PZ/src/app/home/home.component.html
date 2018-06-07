@@ -1,3 +1,22 @@
-<p>
-  home works!
-</p>
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let i of info">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{i.title}}
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-grid-list [cols]="4" [gutterSize]="30">
+            <mat-grid-tile [colspan]=1 [rowspan]=1 [style.background]="purpleAmber">
+                <mat-icon id="mat-icon">{{i.icon}}</mat-icon>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]=3 [rowspan]=1>
+                <div>
+                    <section class="mat-typography">
+                        <h2>{{i.text}}</h2>
+                    </section>
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-expansion-panel>
+</mat-accordion>
+

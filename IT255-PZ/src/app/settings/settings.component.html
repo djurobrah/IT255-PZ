@@ -1,0 +1,24 @@
+<mat-card class="flexColumn">
+    <h1 class="mat-headline">Account settings</h1>
+    <h1 class="mat-body">{{this.authService.getDisplayName()}}</h1>
+
+    <!--<img mat-card-image [src]="this.firestorageService.getProfilePicture() | async" alt="Image from AngularFireStorage">-->
+    <!--<span *ngIf="!(this.firestorageService.uploadProgress)">bla</span>-->
+    <span>{{this.firestorageService.getProfilePicture() | async}}</span>
+    <mat-progress-bar #progressBar *ngIf="this.firestorageService.uploadProgress" mode="determinate"
+                      [value]="(this.firestorageService.uploadProgress | async)"></mat-progress-bar>
+    <span>{{this.firestorageService.dlUrl | async}}</span>
+
+    <button mat-raised-button color="primary" (click)="fileInput.click()">
+        <mat-icon>add_photo_alternate</mat-icon>
+        <span>Change profile picture</span>
+        <input #fileInput type="file"
+               (change)="this.firestorageService.uploadFile(this.authService.getDisplayName(), $event);"
+               accept=".png,.jpg" style="display:none;"/>
+    </button>
+
+    <button mat-raised-button color="warn" (click)="onDelete()">
+        <mat-icon>delete_forever</mat-icon>
+        <span>Delete account!</span>
+    </button>
+</mat-card>

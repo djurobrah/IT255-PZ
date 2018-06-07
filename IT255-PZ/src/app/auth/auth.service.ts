@@ -2,8 +2,9 @@ import {Injectable} from '@angular/core';
 import {AngularFireAuth} from 'angularfire2/auth';
 import {MatSnackBar} from "@angular/material";
 import {Router} from "@angular/router";
-import {User} from "firebase";
-import {Observable} from "rxjs/Observable";
+import {TeamMember} from "../team-member";
+import {FirestoreService} from "../firestore.service";
+import {FirestorageService} from "../firestorage.service";
 
 @Injectable()
 export class AuthService
@@ -11,9 +12,12 @@ export class AuthService
     router: Router;
     authenticated: boolean;
 
-    constructor(public afAuth: AngularFireAuth, public snackBar: MatSnackBar, router: Router)
+    constructor(public afAuth: AngularFireAuth,
+                private firestoreService: FirestoreService,
+                private firestorageService: FirestorageService,
+                private snackBar: MatSnackBar,
+                router: Router)
     {
-        console.log("palac");
         this.afAuth.authState.subscribe(auth =>
         {
             if (auth)
@@ -26,7 +30,6 @@ export class AuthService
                 console.log('You are not authenticated');
                 this.authenticated = false;
             }
-
         });
         this.router = router;
     }
@@ -46,9 +49,11 @@ export class AuthService
                 this.updateUsername(username);
                 this.logoutUser();
                 this.openSnackBar("Successfully created an account!", "");
+                this.firestoreService.addTeamMember(new TeamMember(username, email));
             }, err =>
             {
                 this.openSnackBar(err, "CLOSE");
+                //delettepic
             })
     }
 
@@ -58,9 +63,10 @@ export class AuthService
         {
             this.afAuth.auth.createUserWithEmailAndPassword(email, password)
                 .then(res =>
-                {
-                    resolve(res);
-                }, err => reject(err))
+                    {
+                        resolve(res);
+                    },
+                    err => reject(err))
         })
     }
 
@@ -109,7 +115,6 @@ export class AuthService
     {
         return this.authenticated;
     }
-
 
     logoutUser()
     {
