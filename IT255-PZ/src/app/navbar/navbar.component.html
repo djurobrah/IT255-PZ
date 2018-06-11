@@ -12,7 +12,7 @@
                 <mat-icon>home</mat-icon>
                 Home
             </a>
-            <ng-template [ngIf]="this.authService.isAuthenticated()">
+            <ng-template [ngIf]="this.authService.authenticated">
                 <a mat-list-item routerLink="/team">
                     <mat-icon>people</mat-icon>
                     Our team
@@ -40,14 +40,14 @@
             </button>
             <span>Application Title</span>
             <span class="flexSpacer"></span>
-            <ng-template [ngIf]="this.authService.isAuthenticated()">
+            <ng-template [ngIf]="this.authService.authenticated">
                 <mat-icon>person</mat-icon>
-                <span>{{this.authService.getDisplayName()}}</span>
+                <span>{{this.authService.displayName}}</span>
                 <button (click)="this.authService.logoutUser();" mat-button>Logout
                     <mat-icon>exit_to_app</mat-icon>
                 </button>
             </ng-template>
-            <ng-template [ngIf]="!this.authService.isAuthenticated()">
+            <ng-template [ngIf]="!this.authService.authenticated">
                 <button routerLink="/auth" mat-button>Log in
                     <mat-icon>exit_to_app</mat-icon>
                 </button>
@@ -57,5 +57,5 @@
             <router-outlet></router-outlet>
         </div>
 
-        </mat-sidenav-content>
+    </mat-sidenav-content>
 </mat-sidenav-container>

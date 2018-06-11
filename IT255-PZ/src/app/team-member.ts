@@ -1,15 +1,14 @@
-export class TeamMember
-{
-    name: string;
-    bio: string;
+export class TeamMember {
+    username: string;
+    email: string;
     joined: Date;
-    pictureUrl: string;
+    // pictureUrl: string;
 
-    constructor(name: string, bio: string)
-    {
-        this.name = name;
-        this.bio = bio;
+    constructor(username: string, email: string) {
+        this.username = username;
+        this.email = email;
         this.joined = new Date();
-        this.pictureUrl = "";
+        // this.pictureUrl = "";
     }
+
 }

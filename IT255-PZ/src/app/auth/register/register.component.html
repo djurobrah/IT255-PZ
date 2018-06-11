@@ -26,14 +26,6 @@
             <mat-error *ngIf="registerForm.get('passwordConf').invalid">{{getPasswordConfErrorMsg()}}</mat-error>
         </mat-form-field>
 
-        <div *ngIf="registerForm.get('username').valid" class="flexRow">
-            <mat-label class="mat-body">Upload profile picture</mat-label>
-            <button type="button" mat-icon-button (click)="imgFileInput.click()">
-                <mat-icon>cloud_upload</mat-icon>
-            </button>
-            <input #imgFileInput formControlName="file" hidden type="file" (change)="uploadFile($event)"/>
-        </div>
-
         <button mat-raised-button color="primary" [disabled]="registerForm.invalid">Register</button>
     </form>
 </div>

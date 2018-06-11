@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs/internal/Observable";
-import {FirestoreService} from "../firestore.service";
 import {TeamMember} from "../team-member";
+import {FireDatabaseService} from "../fire-database.service";
 
 @Component({
     selector: 'app-team',
@@ -13,13 +13,18 @@ export class TeamComponent implements OnInit
 
     members: Observable<TeamMember[]>;
 
-    constructor(private firestore: FirestoreService)
+    // constructor(private firestore: FirestoreService)
+    // {
+    // }
+
+    constructor(private fireDatabase: FireDatabaseService)
     {
+
     }
 
     ngOnInit()
     {
-        this.members = this.firestore.getAllTeamMembers();
+        this.members = this.fireDatabase.getAllTeamMembers();
     }
 
 }

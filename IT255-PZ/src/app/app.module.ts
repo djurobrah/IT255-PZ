@@ -36,11 +36,12 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {AuthService} from "./auth/auth.service";
 import {AuthGuardService} from "./auth/auth-guard.service";
 import {AdminComponent} from './admin/admin.component';
-import {FirestoreService} from "./firestore.service";
 import {AngularFireStorageModule} from "angularfire2/storage";
 import {FirestorageService} from "./firestorage.service";
 import {DefaultPipe} from './default.pipe';
 import {SettingsComponent} from './settings/settings.component';
+import {FireDatabaseService} from "./fire-database.service";
+import {AngularFireDatabaseModule} from "angularfire2/database";
 
 const appRoutes: Routes =
     [
@@ -50,7 +51,6 @@ const appRoutes: Routes =
         {path: 'team', component: TeamComponent, canActivate: [AuthGuardService]},
         {path: 'admin', component: AdminComponent, canActivate: [AuthGuardService]},
         {path: 'settings', component: SettingsComponent, canActivate: [AuthGuardService]}
-
     ]
 
 @NgModule({
@@ -88,13 +88,13 @@ const appRoutes: Routes =
         FlexLayoutModule,
         AngularFireModule.initializeApp(environment.firebase),
         AngularFirestoreModule,
+        AngularFireDatabaseModule,
         AngularFireAuthModule,
         AngularFireStorageModule,
         RouterModule.forRoot(appRoutes)
     ],
-    providers: [AuthService, AuthGuardService, FirestoreService, FirestorageService],
+    providers: [AuthService, AuthGuardService, FirestorageService, FireDatabaseService],
     bootstrap: [AppComponent]
 })
-export class AppModule
-{
+export class AppModule {
 }
