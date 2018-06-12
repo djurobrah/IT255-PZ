@@ -35,7 +35,6 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AuthService} from "./auth/auth.service";
 import {AuthGuardService} from "./auth/auth-guard.service";
-import {AdminComponent} from './admin/admin.component';
 import {AngularFireStorageModule} from "angularfire2/storage";
 import {FirestorageService} from "./firestorage.service";
 import {DefaultPipe} from './default.pipe';
@@ -49,7 +48,6 @@ const appRoutes: Routes =
         {path: 'home', component: HomeComponent},
         {path: 'auth', component: AuthComponent, canActivate: [AuthGuardService]},
         {path: 'team', component: TeamComponent, canActivate: [AuthGuardService]},
-        {path: 'admin', component: AdminComponent, canActivate: [AuthGuardService]},
         {path: 'settings', component: SettingsComponent, canActivate: [AuthGuardService]}
     ]
 
@@ -62,7 +60,6 @@ const appRoutes: Routes =
         RegisterComponent,
         AuthComponent,
         TeamComponent,
-        AdminComponent,
         DefaultPipe,
         SettingsComponent
     ],

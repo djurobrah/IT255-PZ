@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {Observable} from "rxjs/Observable";
 import {finalize, map} from "rxjs/operators";
 import {AngularFireStorage} from "angularfire2/storage";
+import {FireDatabaseService} from "./fire-database.service";
 
 @Injectable()
 export class FirestorageService
@@ -10,7 +11,7 @@ export class FirestorageService
     dlUrl: Observable<string>;
     uploadProgress: Observable<number>;
 
-    constructor(private storage: AngularFireStorage)
+    constructor(private storage: AngularFireStorage, private databaseService: FireDatabaseService)
     {
     }
 
@@ -22,10 +23,17 @@ export class FirestorageService
         task.snapshotChanges().pipe(
             finalize(() =>
             {
-                this.dlUrl = ref.getDownloadURL();
+                ref.getDownloadURL().subscribe((downloadUrl)=>
+                {
+                    this.dlUrl = downloadUrl;
+                    this.databaseService.updateTeamMemberPictureURL(username, this.dlUrl);
+                });
             })
-        ).subscribe()
+        ).subscribe();
     }
 
-
+    deleteFile(username: string)
+    {
+        this.storage.ref(username).delete();
+    }
 }

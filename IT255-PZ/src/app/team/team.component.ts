@@ -8,22 +8,15 @@ import {FireDatabaseService} from "../fire-database.service";
     templateUrl: './team.component.html',
     styleUrls: ['./team.component.css']
 })
-export class TeamComponent implements OnInit
-{
+export class TeamComponent implements OnInit {
 
     members: Observable<TeamMember[]>;
 
-    // constructor(private firestore: FirestoreService)
-    // {
-    // }
-
-    constructor(private fireDatabase: FireDatabaseService)
-    {
+    constructor(private fireDatabase: FireDatabaseService) {
 
     }
 
-    ngOnInit()
-    {
+    ngOnInit() {
         this.members = this.fireDatabase.getAllTeamMembers();
     }
 

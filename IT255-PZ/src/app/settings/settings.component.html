@@ -2,11 +2,12 @@
     <h1 class="mat-headline">Account settings</h1>
     <h1 class="mat-body">{{this.authService.displayName}}</h1>
 
-    <!--<img mat-card-image [src]="this.firestorageService.getProfilePicture(this.authService.getDisplayName()) | async" alt="Image from AngularFireStorage">-->
-    <!--<span *ngIf="!(this.firestorageService.uploadProgress)">bla</span>-->
+    <img mat-card-image [src]="(member | async)?.pictureURL
+         | default: 'https://firebasestorage.googleapis.com/v0/b/it255-pz.appspot.com/o/nopicture.png?alt=media&token=cdf138f3-840e-49e4-aa05-b8b9de0ca9fa'"
+         alt="Photo of a Shiba Inu">
+
     <mat-progress-bar #progressBar *ngIf="this.firestorageService.uploadProgress" mode="determinate"
                       [value]="(this.firestorageService.uploadProgress | async)"></mat-progress-bar>
-    <span>{{this.firestorageService.dlUrl | async}}</span>
 
     <button mat-raised-button color="primary" (click)="fileInput.click()">
         <mat-icon>add_photo_alternate</mat-icon>
@@ -16,7 +17,7 @@
                accept=".png,.jpg" style="display:none;"/>
     </button>
 
-    <button mat-raised-button color="warn" (click)="onDelete()">
+    <button mat-raised-button color="warn" (click)="deleteWholeUser(this.authService.displayName)">
         <mat-icon>delete_forever</mat-icon>
         <span>Delete account!</span>
     </button>

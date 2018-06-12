@@ -86,6 +86,14 @@ export class AuthService {
         });
     }
 
+    deleteUser() {
+        this.afAuth.auth.currentUser.delete().then
+        (() => {
+            this.router.navigate(['']);
+        })
+    }
+
+
     openSnackBar(message: string, action: string) {
         this.snackBar.open(message, action, {
             duration: 2000,

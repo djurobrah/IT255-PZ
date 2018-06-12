@@ -3,14 +3,10 @@
         <mat-card-header>
             <div mat-card-avatar class="example-header-image"></div>
             <mat-card-title>{{ member.name }}</mat-card-title>
-            <!--<mat-card-subtitle>{{ member.pictureUrl | default:-->
-                <!--'https://firebasestorage.googleapis.com/v0/b/it255-pz.appspot.com/o/' +-->
-                <!--'nopicture.png?alt=media&token=9bac6d57-ac9d-4f34-a778-11e329828df4'}}-->
-            <!--</mat-card-subtitle>-->
         </mat-card-header>
-        <img mat-card-image [src]="member.pictureUrl | default:
-                'https://firebasestorage.googleapis.com/v0/b/it255-pz.appspot.com/o/' +
-                'nopicture.png?alt=media&token=9bac6d57-ac9d-4f34-a778-11e329828df4'" alt="Photo of a Shiba Inu">
+        <img mat-card-image [src]="member.pictureURL
+         | default: 'https://firebasestorage.googleapis.com/v0/b/it255-pz.appspot.com/o/nopicture.png?alt=media&token=cdf138f3-840e-49e4-aa05-b8b9de0ca9fa'"
+             alt="Photo of a Shiba Inu">
         <mat-card-content>
             <p>
                 {{member.email}}

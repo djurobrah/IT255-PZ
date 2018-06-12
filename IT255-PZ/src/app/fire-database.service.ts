@@ -20,19 +20,21 @@ export class FireDatabaseService {
     tryAddTeamMember(member: TeamMember) {
         this.addTeamMember(member)
             .then(res => {
-                this.openSnackBar(res, "CLOSE");
+                console.log(res);
+                //this.openSnackBar(res, "CLOSE");
             }, err => {
-                this.openSnackBar(err, "CLOSE");
+                console.log(err);
+                //this.openSnackBar(err, "CLOSE");
             })
     }
-
 
     addTeamMember(member: TeamMember) {
 
         return new Promise<any>((resolve, reject) => {
             this.db.object("team/" + member.username).update({
                     email: member.email,
-                    joined: member.joined
+                    joined: member.joined,
+                    pictureURL: member.pictureURL
                 }
             ).then(res => {
                     resolve(res);
@@ -41,12 +43,25 @@ export class FireDatabaseService {
         })
     }
 
-    openSnackBar(message
-                     :
-                     string, action
-                     :
-                     string
-    ) {
+    getTeamMember(username: string)
+    {
+        return this.db.object("team/" + username).valueChanges();
+    }
+
+    updateTeamMemberPictureURL(username: string, url)
+    {
+        this.db.object("team/" + username).update(
+            {
+                pictureURL: url
+            })
+    }
+
+    deleteTeamMember(username: string)
+    {
+        this.db.object("team/" + username).remove();
+    }
+
+    openSnackBar(message: string, action: string) {
         this.snackBar.open(message, action, {
             duration: 2000,
         });

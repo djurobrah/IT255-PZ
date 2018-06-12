@@ -1,6 +1,9 @@
 import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {AuthService} from "../auth/auth.service";
 import {FirestorageService} from "../firestorage.service";
+import {FireDatabaseService} from "../fire-database.service";
+import {TeamMember} from "../team-member";
+import {Observable} from "rxjs/Observable";
 
 @Component({
     selector: 'app-settings',
@@ -9,10 +12,13 @@ import {FirestorageService} from "../firestorage.service";
 })
 export class SettingsComponent implements OnInit, OnDestroy
 {
-    @ViewChild('progressBar') input: ElementRef;
+    member: Observable<any>;
 
-    constructor(private authService: AuthService, private firestorageService: FirestorageService)
+    constructor(private authService: AuthService,
+                private firestorageService: FirestorageService,
+                private fireDatabaseService: FireDatabaseService)
     {
+        this.member = fireDatabaseService.getTeamMember(authService.displayName);
     }
 
     ngOnDestroy(): void
@@ -25,6 +31,12 @@ export class SettingsComponent implements OnInit, OnDestroy
     {
     }
 
+    deleteWholeUser(username: string)
+    {
+        this.firestorageService.deleteFile(username);
+        this.fireDatabaseService.deleteTeamMember(username);
+        this.authService.deleteUser();
+    }
 
 
 
