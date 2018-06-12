@@ -9,3 +9,12 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.Aligner > app-team {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

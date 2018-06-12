@@ -1,8 +1,7 @@
-import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {AuthService} from "../auth/auth.service";
 import {FirestorageService} from "../firestorage.service";
 import {FireDatabaseService} from "../fire-database.service";
-import {TeamMember} from "../team-member";
 import {Observable} from "rxjs/Observable";
 
 @Component({

@@ -1,14 +1,13 @@
-.card-container
-{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-}
 .example-card {
-    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
 }
 
-.example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+img {
+    max-width: 100%;
+    max-height: 70%;
 }

@@ -32,6 +32,7 @@ export class FireDatabaseService {
 
         return new Promise<any>((resolve, reject) => {
             this.db.object("team/" + member.username).update({
+                    username: member.username,
                     email: member.email,
                     joined: member.joined,
                     pictureURL: member.pictureURL

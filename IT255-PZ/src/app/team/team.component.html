@@ -1,20 +1,9 @@
-<div class="card-container">
-    <mat-card *ngFor="let member of members | async" class="example-card">
-        <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ member.name }}</mat-card-title>
-        </mat-card-header>
-        <img mat-card-image [src]="member.pictureURL
+<mat-card *ngFor="let member of members | async" class="example-card">
+    <img mat-card-image [src]="member.pictureURL
          | default: 'https://firebasestorage.googleapis.com/v0/b/it255-pz.appspot.com/o/nopicture.png?alt=media&token=cdf138f3-840e-49e4-aa05-b8b9de0ca9fa'"
-             alt="Photo of a Shiba Inu">
-        <mat-card-content>
-            <p>
-                {{member.email}}
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-        </mat-card-actions>
-    </mat-card>
-</div>
+         alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <h1 class="mat-h1">{{member.username}}</h1>
+        <h1 class="mat-caption">Joined: {{member.joined | date}}</h1>
+    </mat-card-content>
+</mat-card>
