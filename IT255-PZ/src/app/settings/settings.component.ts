@@ -13,9 +13,9 @@ export class SettingsComponent implements OnInit, OnDestroy
 {
     member: Observable<any>;
 
-    constructor(private authService: AuthService,
-                private firestorageService: FirestorageService,
-                private fireDatabaseService: FireDatabaseService)
+    constructor(public authService: AuthService,
+                public firestorageService: FirestorageService,
+                public fireDatabaseService: FireDatabaseService)
     {
         this.member = fireDatabaseService.getTeamMember(authService.displayName);
     }

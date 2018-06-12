@@ -10,7 +10,7 @@ import {AuthService} from "../auth/auth.service";
 })
 export class NavbarComponent {
 
-    constructor(private authService: AuthService, private breakpointObserver: BreakpointObserver) {
+    constructor(public authService: AuthService, public breakpointObserver: BreakpointObserver) {
     }
 
     isHandset: Observable<BreakpointState> = this.breakpointObserver.observe(Breakpoints.Handset);
