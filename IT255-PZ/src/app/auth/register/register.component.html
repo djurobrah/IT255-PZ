@@ -16,13 +16,13 @@
 
         <mat-form-field appearance="outline">
             <mat-label>Enter your password</mat-label>
-            <input matInput placeholder="Password" formControlName="password">
+            <input type="password" matInput placeholder="Password" formControlName="password">
             <mat-error *ngIf="registerForm.get('password').invalid">{{getPasswordErrorMsg()}}</mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
             <mat-label>Confirm your password</mat-label>
-            <input matInput placeholder="Password" formControlName="passwordConf">
+            <input type="password" matInput placeholder="Password" formControlName="passwordConf">
             <mat-error *ngIf="registerForm.get('passwordConf').invalid">{{getPasswordConfErrorMsg()}}</mat-error>
         </mat-form-field>
 
